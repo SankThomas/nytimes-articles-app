@@ -1,13 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+p,
+li,
+input,
+button,
+small,
+a {
+  font-family: 'Josefin Slab', sans-serif;
+}
+
+a {
+  text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Courgette', cursive;
+}
+
+p {
+  font-size: 18px;
+}
+
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #dddddd;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.showcase {
+  background: url('https://images.pexels.com/photos/4057766/pexels-photo-4057766.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260')
+    no-repeat center/cover;
+  height: 300px;
+  padding: 60px 20px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .showcase {
+    background: url('https://images.pexels.com/photos/40906/art-attachment-background-boat-40906.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260')
+      no-repeat center/cover;
+  }
+}
+
+@media (min-width: 992px) {
+  p {
+    font-size: 20px;
+  }
 }
